@@ -1,0 +1,190 @@
+member_id,name,phone,email,gender,date_of_birth,city,income_range,interests,source,referred_by,joined_on,last_survey_completed_on
+VB10073,Ishaan Singh,06133252695,ishaan.41@example.in,M,1998-10-22,Ahmedabad,10L-20L,Auto;Kids,Referral,VB10002,02-11-25,12-01-26
+VB10166,Riya Patil,9021331114,riya.8@example.in,Female,25/02/1989,Pune,6L-10L,Home;Travel;Health,Referral,VB10083,2026-08-14,2026-10-20
+VB10169,Priya Rao,8728547667,priya.63@example.in,F,01-03-84,Bengaluru,10L-20L,Tech;Travel;Kids;Auto,Referral,VB10113,15/08/2026,20-10-26
+VB10901,Different Person,9958519043,,female,2000-02-05,navi mumbai,Below 3L,Tech;Travel;Fashion;Auto,WhatsApp Group - Mumbai,,24/01/2026,15-10-26
+VB10085,Meera Singh,992141534,,F,07/05/1989,Thane,10L-20L,Auto;Fashion;Health;Beauty,Staff DM - Agent 01,,01-08-25,10/04/2026
+VB10137,Tanvi Pawar,+91 86799 51794,tanvi999@example.com,F,27/03/1978,Pune,10L-20L,Tech;Fashion;Food,insta,,10/09/2026,
+VB10065,Meera Reddy,6824460261,meera531@example.com,F,1983-03-19, Bombay,Above 20L,Beauty;Kids;Finance,IG,,08-05-26,20/10/2026
+VB10041,  NEHA CHAVAN ,+919958519043,,female,2000-02-05,navi mumbai,Below 3L,Tech;Travel;Fashion;Auto,WhatsApp Group - Mumbai,,24/01/2026,15-10-26
+VB10050,Neha Jadhav,6351619945,neha879@example.com,F,20/10/1974,Mumbai ,10L-20L,Tech;Kids;Fashion,Instagram,,2025-09-22,
+VB10005,Sunita Verma,+919804571784,sunita@example,Female,1988-04-09,Navi Mumbai,10L-20L,Beauty;Auto,Referral,VB10004,08/06/2026,
+VB10105,Ayesha Nair,+916007146555,ayesha355@example.com,Female,01/07/1984,Hyderabad,10L-20L,Fashion;Tech,Facebook,,2025-12-21,18/09/2026
+VB10117,Kabir Pawar,99716-97316,kabir232@example.com,M,15/03/1989,Thane,6L-10L,Home,Referral,VB10027,05/03/2026,2026-10-19
+VB10142,Arjun Verma,8560349602,arjun@example,Male,11/09/1992,Navi Mumbai,3L-6L,Fashion;Beauty;Food;Auto,Staff DM - Agent 02,,20-10-25,
+VB10007,Asha Shah,08162294866,asha@example,Female,31/02/1995,Hyderabad,3L-6L,Beauty;Finance,Staff DM - Agent 01,,2026-07-13,28/09/2026
+VB10175,Jaya Shaikh,6819063771,,female,21/11/2006,Thane,Below 3L,Fashion;Travel;Home;Auto,Instagram,,18/06/2025,2025-07-31
+VB10116,Aditya Verma,7555651747,aditya@example,Male,25/07/1979,NaviMumbai,3L-6L,Finance;Home;Food;Auto,Referral,VB10045,02-04-25,
+VB10147,Riya Singh,+91 75964 85268,riya.76@example.in,Female,1994-12-18,Thane,Below 3L,Fashion,whatsapp mumbai,,21/02/2025,02-05-25
+VB10153,Imran Kulkarni,09195734813,imran@example,male,1991-06-20,Nagpur,3L-6L,Kids;Health;Tech;Travel,,,09/12/2025,
+VB10064,Vivaan Pillai,+919561141082,vivaan764@example.com,Male,1994-06-23,Nagpur,3L-6L,Home;Health;Tech,WhatsApp Group - Pune,,01/02/2026,
+VB10112,Ramesh Singh,870601696,,Male,16/08/1966,Hyderabad,10L-20L,Travel;Auto;Kids,whatsapp mumbai,,10/09/2026,2026-10-20
+VB10004,Omkar Reddy,08864887663,omkar.63@example.in,Male,1974-08-08,navi mumbai,6L-10L,Finance;Home;Fashion,WhatsApp Group - Pune,,13-04-26,
+VB10170,Aarav Naik,+91 68635 44644,,M,26/10/1978,Delhi,3L-6L,Fashion;Travel,Staff DM - Agent 02,,24/12/2025,
+VB10095,Priya Shah,08631439546,priya840@example.com,female,27/02/1992,Ahmedabad,Below 3L,Auto,Staff DM - Agent 02,,16/09/2025,02-05-26
+VB10076,Kavya Nair,7516585098,,Female,23/12/1969,navi mumbai,10L-20L,Food,Referral,VB10010,07-05-25,2025-10-02
+,,,,,,,,,,,,
+VB10158,Arjun Mishra,+917592846312,arjun857@example.com,Male,11/01/1983,mumbai,Below 3L,Auto;Home,IG,,09/03/2025,
+VB10011,Pratik Rao,71948-93949,pratik@example,M,26/09/1991,,6L-10L,Food;Travel,Staff DM - Agent 01,,28-01-25,28-04-25
+VB10150,Ayesha Kulkarni,06211740554,,Female,1971-05-11,Bengaluru,6L-10L,Finance;Travel,Staff DM - Agent 02,,2025-01-08,22-06-25
+VB10134,Diya Singh,06533656200,diya@example,F,1989-05-04,,Below 3L,Finance,FB,,2025-05-10,17/01/2026
+VB10045,Ayesha Mehta,+918269276709,,Female,17/03/1980,,6L-10L,Home,insta,,08/02/2025,
+VB10039,Harsh Fernandes,7708538671,,male,1969-12-24,,3L-6L,Finance,Staff DM - Agent 01,,15/07/2026,
+,Sunita Nair,+918569632792,sunita@example,female,24/06/1986,Ahmedabad,10L-20L,Health;Food;Home,Referral,VB10013,18-11-25,23/07/2026
+VB10099,Meera Desai,6191722903,meera.53@example.in,Female,21/07/1977,Ahmedabad,6L-10L,Health;Finance;Home;Travel,Instagram,,13/02/2025,
+VB10071,Omkar Desai,8973481241,omkar198@example.com,male,04/06/1979,,10L-20L,Beauty;Travel,Website,,26/05/2026,20-10-26
+VB10034,Sana Fernandes,6697978025,sana.92@example.in,F,02/10/1970, Bombay,3L-6L,Food,WhatsApp Group - Pune,,25-06-26,
+VB10069,Omkar Singh,+919057929923,omkar@example,Male,23/09/1967,,Above 20L,Tech,WhatsApp Group - Pune,,03/06/2025,
+VB10138,Harsh Mishra,6900830345,harsh32@example.com,male,27/12/1973,navi mumbai,6L-10L,Health;Fashion,FB,,2026-05-12,20-10-26
+VB10115,  ISHAAN SHAIKH ,804915321,ishaan@example,M,04-04-80,Ahmedabad,Above 20L,Finance;Auto;Travel;Fashion,Referral,VB10069,2025-07-08,
+VB10154,Kabir Sharma,+91 80148 61241,kabir.9@example.in,Male,09/04/1990,Hyderabad,6L-10L,Travel;Tech;Finance;Food,Referral,VB10104,30/09/2026,
+VB10146,Rohan Shaikh,09649507135,rohan@example,M,18/12/2005,bangalore,3L-6L,Home;Tech;Beauty,,,13/04/2025,25/07/2025
+VB10025,  SUNITA BHOSALE ,+916125373924,sunita@example,Female,12-11-04,Nagpur,Below 3L,Kids;Home;Fashion;Finance,WhatsApp Group - Pune,,24/07/2026,
+VB10145,Neha Reddy,8965462055,,F,24/05/1982,Pune,6L-10L,Kids;Beauty;Travel,website,,2025-04-11,10/08/2025
+VB10051,Meera Gupta,07972584441,meera733@example.com,Female,09/10/2000,mumbai,Above 20L,Finance;Tech,Referral,VB10019,2026-02-28,
+VB10010,Nikhil Kulkarni,,nikhil862@example.com,Male,06/06/1976,Nagpur,Below 3L,Tech;Finance,insta,,21-04-26,20-10-26
+VB10152,Sneha Rao,9903074899,sneha801@example.com,female,09/09/1991,Ahmedabad,Below 3L,Home;Health;Food;Finance,WhatsApp Group - Pune,,12-03-26,
+VB10121,  ROHAN CHAVAN ,67887-45492,,Male,19-05-76,Thane,Above 20L,Health;Fashion;Kids,Staff DM - Agent 01,,28/04/2025,
+VB10132,  RAMESH FERNANDES ,670147849,ramesh600@example.com,Male,19/11/1979,Nagpur,3L-6L,Travel,insta,,01/10/2026,2026-10-20
+VB10037,Mihir Singh,9116603304,mihir273@example.com,Male,26/06/2001,Pune,3L-6L,Health;Food;Travel,Staff DM - Agent 02,,24-08-26,20/10/2026
+VB10014,Omkar Shaikh,6853801291,omkar.92@example.in,Male,11/12/1983,Mumbai,Below 3L,Fashion,Referral,VB10014,06/05/2025,15/12/2025
+VB10160,Nikhil Shaikh,8860802223,nikhil.79@example.in,Male,09/09/1970,Delhi,3L-6L,Health;Beauty;Home,WhatsApp Group - Pune,,16/12/2025,
+VB10036,Kabir Verma,7608724385,kabir@example,Male,19/02/1977,navi mumbai,6L-10L,Home;Finance;Health;Travel,Referral,VB10025,2026-05-10,
+VB10119,Omkar Verma,8402521960,omkar303@example.com,Male,02-06-87,Hyderabad,10L-20L,Tech;Kids;Beauty;Fashion,Instagram,,2025-08-10,
+VB10177,Farhan Shaikh,7482864642,,M,28/09/1977,Ahmedabad,Above 20L,Fashion;Kids;Auto,Facebook,,2025-04-29,
+VB10164,Ayesha Sharma,816441320,ayesha693@example.com,Female,1980-04-18,Nagpur,10L-20L,Tech;Beauty;Travel,Staff DM - Agent 02,,08-09-26,
+VB10900,Rahul Shaikh,+91 8559747540,,M,1967-03-18,Thane,10L-20L,Finance;Auto,Staff DM - Agent 02,,28/04/2026,
+VB10168,Pooja Desai,801783263,pooja@example,Female,1971-04-19,MUMBAI ,10L-20L,Beauty;Travel;Finance;Tech,WhatsApp Group - Pune,,14/11/2025,27/03/2026
+VB10113,  HARSH REDDY ,903423659,harsh161@example.com,Male,1997-10-22,Thane,10L-20L,Fashion,WhatsApp Group - Pune,,23/04/2026,
+VB10159,Omkar Gupta,9512292579,omkar822@example.com,Male,03/01/1995,Delhi,Below 3L,Auto,WhatsApp Group - Pune,,18/05/2026,16-10-26
+VB10181,Imran Iyer,7624932796,imran726@example.com,Male,07/02/1997,Hyderabad,Below 3L,Finance;Kids,IG,,21/03/2025,04/08/2025
+VB10053,Shruti Patil,6564644033,,Female,01/10/1967,,Below 3L,Tech,IG,,08/07/2026,
+VB10035,Priya Pillai,6524735736,priya@example,Female,01-05-99,Delhi,3L-6L,Beauty;Finance;Auto,whatsapp mumbai,,14-03-25,
+VB10111,Priya Pawar,8767526058,priya.78@example.in,Female,11/03/1973,Nagpur,Below 3L,Kids;Tech;Home,WhatsApp Group - Pune,,25/11/2025,12/01/2026
+VB10126,Kavya Joshi,6206661205,kavya758@example.com,Female,26/07/1993,Bangalore,6L-10L,Fashion;Kids,whatsapp mumbai,,02/02/2025,
+VB10080,Sana Iyer,+91 79360 55049,sana@example,Female,13/08/2005,Nagpur,10L-20L,Auto;Finance;Beauty,website,,10/02/2025,17/10/2025
+VB10075,Arjun Mehta,8327465501,arjun@example,Male,19-12-90,Ahmedabad,3L-6L,Food;Finance;Kids,website,,08/09/2026,
+VB10056,Rohan Joshi,+91 80137 61561,rohan@example,Male,24/05/1977,Thane,Below 3L,Home;Food;Travel,Referral,VB10034,2026-09-29,20/10/2026
+VB10139,Zoya Rao,64381-59641,zoya@example,female,15/08/1996,mumbai,Below 3L,Travel;Finance,Staff DM - Agent 02,,30/08/2026,17/09/2026
+VB10094,Lata Gupta,7074777638,lata796@example.com,F,2006-05-22,Pune,Above 20L,Home;Food;Finance;Fashion,Staff DM - Agent 02,,10/09/2025,2025-10-31
+VB10123,Farhan Gupta,06035247875,farhan@example,Male,25/02/1997,,3L-6L,Finance,Website,,01/07/2025,19/07/2025
+VB10104,  POOJA IYER ,926958359,pooja.66@example.in,Female,05/11/1984, Bombay,3L-6L,Food;Finance;Health;Home,Website,,13/01/2026,
+VB10054,Vivaan Chavan,64216-31111,,male,15-09-04,Nashik,Above 20L,Finance;Fashion;Auto;Beauty,WhatsApp Group - Pune,,20/09/2026,
+VB10125,Omkar Verma,+91 92872 04533,omkar.19@example.in,Male,28/08/1982,Nashik,Below 3L,Food;Kids;Home;Fashion,Referral,VB10011,10-05-25,
+VB10144,Farhan Shah,07109511790,,Male,07-10-97,Hyderabad,3L-6L,Auto;Health;Fashion;Finance,Staff DM - Agent 01,,24-05-25,
+VB10088,Kavya Gupta,+918011459460,kavya684@example.com,Female,1985-03-14,Nagpur,Above 20L,Health;Kids;Travel;Fashion,whatsapp mumbai,,14/03/2026,
+VB10106,Sunita Gupta,6898233843,sunita.28@example.in,Female,1998-04-02,Ahmedabad,Below 3L,Home;Finance;Beauty,Staff DM - Agent 01,,02/06/2025,2025-12-04
+VB10044,Arjun Mishra,821362958,,M,25/12/1983,Bengaluru,3L-6L,Kids;Home;Beauty,,,19-08-25,
+VB10057,Arjun Singh,8222384164,arjun.56@example.in,Male,10/02/1981,Nashik,Above 20L,Health;Tech;Kids;Beauty,WhatsApp Group - Pune,,11-07-26,20/10/2026
+VB10018,Lata Reddy,+918906688281,lata956@example.com,F,24-12-73,Nagpur,Below 3L,Beauty;Health,WhatsApp Group - Pune,,10/05/2025,01/01/2024
+VB10185,Karan Joshi,08526941683,karan@example,Male,1994-07-11,Pune,10L-20L,Kids,whatsapp mumbai,,06/04/2025,18/09/2025
+VB10101,Zoya Verma,9366747147,zoya761@example.com,F,11/04/1982,Pune,3L-6L,Tech;Food,WhatsApp Group - Pune,,02/05/2025,26/08/2025
+VB10078,Rahul Desai,7861352122,,male,10/04/1997,Pune,3L-6L,Kids;Beauty,WhatsApp Group - Pune,,2026-08-05,20/10/2026
+VB10149,Priya Kulkarni,+918860719646,priya@example,F,2000-01-10, Bombay,10L-20L,Food;Kids,WhatsApp Group - Mumbai,,29/11/2025,02-05-26
+VB10049,Deepak Singh,95106-26148,deepak.59@example.in,M,01/02/1973,Thane,Above 20L,Beauty;Food,Referral,VB10028,06/03/2025,2025-04-16
+VB10006,Rahul Iyer,06798193319,,Male,15/03/2010,NaviMumbai,Below 3L,Health;Fashion;Finance,Website,,30-05-25,16/06/2025
+VB10046,Lata Rao,+91 98306 86695,lata@example,female,23/04/1991,Nagpur,3L-6L,Health;Finance;Food;Auto,Instagram,,2026-09-22,
+VB10090,Farhan Reddy,84461-51575,,Male,01/02/1991,Hyderabad,3L-6L,Food;Finance,WhatsApp Group - Pune,,05/03/2025,03/09/2025
+VB10172,Vivaan Iyer,08536354926,vivaan686@example.com,Male,24-02-89,Nagpur,6L-10L,Kids,website,,03-03-26,
+VB10157,Ishaan Verma,871966831,,male,27/08/1969,Bangalore,Above 20L,Finance;Tech;Travel,whatsapp mumbai,,12-09-26,20/10/2026
+VB10040,Tanvi Mehta,864271051,tanvi@example,Female,22/08/1970,Ahmedabad,Above 20L,Auto;Fashion,Staff DM - Agent 01,,25/06/2025,2026-04-17
+VB10083,Vivaan Bhosale,9695397110,vivaan.90@example.in,Male,06/07/2001,Bangalore,Below 3L,Beauty;Finance;Kids;Food,Staff DM - Agent 01,,04/02/2025,
+VB10084,Kabir Gupta,+918278206244,kabir.3@example.in,Male,03/01/1996,Mumbai ,3L-6L,Auto,Website,,24/09/2026,2026-10-20
+VB10114,Lata Verma,+919333743663,lata644@example.com,female,09/06/1993,Bengaluru,Below 3L,Travel;Beauty;Food,Referral,VB10036,14/04/2025,15/09/2025
+VB10015,Sana Jadhav,7228088642,sana322@example.com,female,05/10/1992,,3L-6L,Finance,Referral,VB10016,02/03/2026,12/07/2026
+VB10167,Sneha Pawar,08329844465,sneha@example,F,1969-07-10,Ahmedabad,3L-6L,Finance;Health;Home;Auto,Referral,VB10053,15-08-25,03/06/2026
+VB10029,Lata Mishra,64422-48527,lata132@example.com,F,05/04/1999,Hyderabad,3L-6L,Finance;Fashion,Staff DM - Agent 01,,28-05-25,08/07/2025
+VB10058,Imran Bhosale,6853470424,imran917@example.com,Male,20/11/1969,NaviMumbai,10L-20L,Food;Tech;Travel;Finance,Staff DM - Agent 01,,01/10/2026,
+VB10021,,07579511174,sneha432@example.com,Female,20-05-89,Pune,6L-10L,Fashion;Health,Instagram,,2025-05-01,21-01-26
+VB10052,Zoya Mishra,+91 65679 59650,zoya.20@example.in,F,1986-07-21,Pune,6L-10L,Health;Travel;Auto;Finance,Website,,2026-09-19,20/10/2026
+VB10155,Harsh Shah,+916327192724,harsh@example,Male,17/10/1991, Bombay,3L-6L,Home;Kids,Staff DM - Agent 02,,30-09-25,
+VB10128,Tanvi Nair,7716339285,,female,06/04/1967,Delhi,Below 3L,Finance,FB,,03/06/2026,
+VB10066,Aditya Patil,691703927,aditya190@example.com,M,1966-12-02,Mumbai ,3L-6L,Health,Facebook,,2025-05-15,2026-01-30
+VB10109,Harsh Reddy,75753-70730,harsh884@example.com,Male,11-03-72,Thane,Above 20L,Home,Staff DM - Agent 02,,2026-08-19,
+VB10042,Aarav Joshi,+91 91120 98426,aarav.9@example.in,male,15/12/1976,Nashik,6L-10L,Auto,WhatsApp Group - Pune,,06/09/2025,
+VB10086,  ADITYA NAIK ,9686922713,aditya.13@example.in,Male,2002-10-02,Ahmedabad,Above 20L,Food;Fashion,Staff DM - Agent 02,,2025-08-10,2025-10-24
+VB10011,Pratik Rao,71948-93949,pratik@example,M,26/09/1991,,6L-10L,Food;Travel,Staff DM - Agent 01,,28-01-25,28-04-25
+VB10082,Siddharth Jadhav,9075689651,siddharth.83@example.in,M,11-01-76,navi mumbai,10L-20L,Kids;Finance;Auto,website,,07/07/2026,20/09/2026
+VB10016,Lata Bhosale,+91 68458 50037,lata.7@example.in,Female,11-05-91,navi mumbai,Below 3L,Kids;Fashion,Referral,VB10015,31/08/2026,20/10/2026
+VB10141,  VIVAAN SHARMA ,826517033,vivaan577@example.com,M,26-07-71,Nashik,Above 20L,Health;Tech;Beauty;Fashion,WhatsApp Group - Pune,,21/02/2026,2026-08-23
+VB10091,Imran Pillai,649953142,imran603@example.com,Male,02-12-01,Nagpur,10L-20L,Tech;Beauty,Staff DM - Agent 01,,09/03/2025,
+VB10063,Meera Naik,08217233496,meera.75@example.in,F,26/12/1980,Nashik,10L-20L,Finance;Travel;Kids;Health,FB,,18/07/2026,20/10/2026
+VB10043,Pooja Singh,06647744796,pooja.42@example.in,female,2005-11-01,Thane,10L-20L,Health;Fashion;Food,Referral,VB10038,2025-05-05,28/10/2025
+VB10120,Imran Singh,91375-04997,imran913@example.com,Male,2003-01-10,Pune,Above 20L,Beauty,Referral,VB10007,25-06-26,
+VB10130,Kavya Khan,6168728540,kavya@example,Female,2003-06-12, Bombay,Below 3L,Beauty;Auto;Fashion,Staff DM - Agent 01,,01/05/2025,
+VB10055,Karan Gupta,7960179677,karan716@example.com,Male,22/09/1988,Thane,3L-6L,Travel,Referral,VB10013,22-02-25,2025-05-19
+VB10124,  DIYA BHOSALE ,98101-08102,diya@example,Female,2004-08-27,Delhi,3L-6L,Finance;Tech,Referral,VB10118,16/01/2026,12/10/2026
+VB10092,Asha Kulkarni,8805949806,asha@example,F,1971-07-17,Nashik,6L-10L,Kids;Health;Beauty,Facebook,,23/10/2025,26/06/2026
+VB10008,Nikhil Shaikh,875177992,nikhil.17@example.in,male,,Pune,Above 20L,Beauty;Health,FB,,2025-01-27,2025-10-07
+VB10026,Rahul Shaikh,85597-47540,,M,1967-03-18,Thane,10L-20L,Finance;Auto,Staff DM - Agent 02,,28/04/2026,
+VB10074,Pratik Fernandes,09121385607,,M,17/11/1967,Thane,Below 3L,Fashion,Staff DM - Agent 01,,2025-04-08,
+VB10072,Omkar Sharma,07422042628,,M,26/09/1974,Thane,3L-6L,Finance;Health;Home;Tech,Staff DM - Agent 01,,10/08/2026,2026-10-20
+VB10038,Vivaan Patil,8780370412,vivaan@example,Male,18/12/2005,,Below 3L,Tech;Finance;Travel,WhatsApp Group - Pune,,04/04/2026,
+VB10081,  FARHAN MISHRA ,768771099,,M,08/12/1981,Thane,6L-10L,Travel;Beauty;Home,Staff DM - Agent 02,,28/07/2025,
+VB10140,Zoya Jadhav,+91 63634 54626,zoya.65@example.in,female,18/03/1975,Pune,Above 20L,Auto;Fashion;Food,whatsapp mumbai,,25/06/2026,
+VB10024,Ayesha Desai,8996775003,ayesha.28@example.in,F,24-07-68,Nashik,Below 3L,Health;Finance;Tech,Staff DM - Agent 01,,11/01/2025,30-05-25
+VB10087,Jaya Patil,9425657983,jaya939@example.com,Female,01/11/1988,Pune,10L-20L,Auto,Staff DM - Agent 01,,27-09-26,2026-10-20
+VB10028,Deepak Mehta,06733688283,,Male,17/09/1981,Delhi,6L-10L,Fashion;Kids;Health;Home,website,,19/04/2025,
+VB10013,Siddharth Shah,+916659397615,siddharth242@example.com,Male,04-02-84,MUMBAI ,Above 20L,Beauty;Travel;Health,Facebook,VB99999,19-11-25,
+VB10032,Priya Shah,7123636082,priya@example,female,1977-02-25,Bengaluru,6L-10L,Health;Beauty;Finance,WhatsApp Group - Pune,,29/12/2025,05/10/2026
+VB10135,Zoya Verma,06017271722,,F,01/08/1967,bangalore,6L-10L,Home;Travel;Finance,WhatsApp Group - Mumbai,,27/04/2025,2025-08-25
+VB10012,Omkar Khan,8491452441,omkar622@example.com,Male,02/11/1971,Delhi,Below 3L,Travel;Beauty;Finance;Auto,FB,,09/07/2025,
+VB10133,Karan Iyer,6965200346,karan.86@example.in,Male,01/09/1969,Hyderabad,Above 20L,Fashion;Finance;Tech,FB,,27-08-25,2025-09-22
+VB10148,Omkar Reddy,749007514,omkar619@example.com,Male,16/10/1969,Nagpur,Above 20L,Finance;Fashion,WhatsApp Group - Pune,,18/04/2025,2025-10-12
+VB10108,  PRATIK SINGH ,+91 70375 26805,pratik901@example.com,male,14-12-77,MUMBAI ,10L-20L,Finance;Health;Food;Kids,WhatsApp Group - Pune,,2025-07-15,
+VB10179,Neha Verma,7927100171,neha.48@example.in,F,15/04/1965,Pune,6L-10L,Beauty;Kids;Tech,Referral,VB10129,08-01-26,
+VB10129,Ramesh Gupta,71357-72108,ramesh@example,Male,10-03-04,Nagpur,3L-6L,Auto;Beauty;Food,insta,,13-06-25,
+VB10161,Farhan Joshi,+916141294321,,Male,09/12/1979,Nagpur,6L-10L,Health;Beauty;Home,insta,,2025-06-02,30/07/2025
+VB10099,Harsh Sharma,06699293832,harsh.95@example.in,Male,1994-09-26,Navi Mumbai,10L-20L,Auto,Facebook,,2025-11-06,30/12/2025
+VB10047,Kabir Rao,+91 68111 36179,kabir390@example.com,Male,16/07/2004,NaviMumbai,6L-10L,Beauty,Staff DM - Agent 01,,2026-03-22,
+VB10060,Rahul Nair,06597760553,rahul939@example.com,Male,22-07-98,Navi Mumbai,Above 20L,Kids;Home;Health,Facebook,,2026-07-08,
+VB10017,Ayesha Bhosale,9943262705,ayesha.41@example.in,Female,11/05/2000,bangalore,Above 20L,Finance;Fashion;Food;Kids,Staff DM - Agent 02,,12/12/2027,20/09/2026
+VB10103,Arjun Reddy,8744158662,,Male,26-02-01,Nashik,10L-20L,Fashion,Staff DM - Agent 02,,2026-06-06,2026-10-20
+VB10009,Riya Patil,98765abc21,riya@example,female,02-07-00,Pune,3L-6L,Travel;Beauty;Kids;Auto,Staff DM - Agent 02,,27/06/2025,11/04/2026
+VB10178,Siddharth Desai,7002997815,siddharth166@example.com,M,14-07-77,Ahmedabad,6L-10L,Kids;Health;Finance;Home,Staff DM - Agent 01,,13/01/2025,
+VB10031,Zoya Mehta,7337352866,,female,07-09-75,Mumbai,10L-20L,Tech;Travel;Auto,WhatsApp Group - Pune,,2026-03-09,05/10/2026
+VB10001,Farhan Shah,+91 99879 73091,farhan.75@example.in,Male,28/11/1997,Ahmedabad,Below 3L,Food;Auto;Finance,WhatsApp Group - Pune,,2025-08-17,
+VB10180,Diya Desai,+918068630374,diya@example,F,14/11/1965,Nagpur,Above 20L,Health;Tech;Food,WhatsApp Group - Pune,,2026-06-28,20-10-26
+VB10107,Rohan Gupta,+918744519955,rohan.61@example.in,Male,11-06-93,Delhi,Above 20L,Home;Fashion,Staff DM - Agent 02,,04-12-25,15-04-26
+VB10027,  MEERA JADHAV ,06884791889,,F,09/06/1977,navi mumbai,6L-10L,Health;Home;Kids;Food,,,08/11/2025,15/12/2025
+VB10182,Swati Bhosale,9028524132,swati.95@example.in,F,15/04/1979,Thane,6L-10L,Travel;Finance,Facebook,,2026-01-04,
+VB10165,Diya Gupta,+91 64194 60654,diya292@example.com,Female,19/09/1998,Nagpur,3L-6L,Kids;Food;Auto;Home,website,,03-04-25,2026-01-21
+VB10151,Vivaan Desai,+91 81578 97948,vivaan.29@example.in,Male,16/09/1991,Nagpur,10L-20L,Finance;Fashion;Beauty,whatsapp mumbai,,19/03/2025,
+VB10143,Harsh Joshi,89188-47855,harsh973@example.com,M,1985-11-16,Ahmedabad,3L-6L,Kids;Health,WhatsApp Group - Pune,,17-02-25,
+VB10102,Rahul Gupta,8043096428,rahul.68@example.in,Male,1973-09-16,Nashik,3L-6L,Tech;Food;Travel,Referral,VB10015,20/08/2025,2026-04-16
+VB10122,Farhan Fernandes,09604343817,farhan@example,male,08-05-05,MUMBAI ,3L-6L,Beauty,Facebook,,28/03/2025,
+VB10131,Omkar Pawar,84558-41957,omkar.95@example.in,male,1969-03-22,Pune,Below 3L,Travel;Finance,WhatsApp Group - Pune,,29-04-25,
+VB10118,  ANANYA JOSHI ,7459004718,,F,26/04/2003,Hyderabad,6L-10L,Auto,Referral,VB10073,25-04-26,20/10/2026
+VB10171,Aarav Verma,07572071013,aarav.17@example.in,Male,19/05/1968,Bengaluru,10L-20L,Auto;Finance,insta,,04/05/2025,
+VB10093,Farhan Jadhav,07405613575,farhan.24@example.in,Male,1999-05-11,Delhi,Below 3L,Home;Travel;Fashion;Tech,,,19/03/2025,
+VB10033,Sunita Bhosale,75769-90854,sunita.61@example.in,Female,1982-06-16,NaviMumbai,Below 3L,Auto;Health;Food;Beauty,Staff DM - Agent 01,,2025-04-21,05/10/2026
+VB10019,Sana Kulkarni,+91 85263 09765,sana@example,female,26-11-02,Mumbai,5 lakh,Kids;Finance,Staff DM - Agent 02,,16/06/2025,
+VB10059,Shruti Reddy,6146133800,shruti@example,Female,1995-06-10,Pune,6L-10L,Finance;Health,insta,,2025-05-15,
+VB10089,Aarav Bhosale,+91 60133 15604,aarav546@example.com,Male,23/05/2005,navi mumbai,Below 3L,Auto;Kids,Facebook,,29/04/2025,
+VB10070,Harsh Bhosale,62999-14706,harsh899@example.com,Male,22/08/1973,MUMBAI ,10L-20L,Health;Travel;Home,WhatsApp Group - Pune,,09-06-26,2026-10-20
+VB10003,Swati Shah,96846-97880,swati.47@example.in,Female,1970-07-19,Thane,Above 20L,Fashion;Finance,Referral,VB10001,12/03/2026,
+VB10176,Meera Joshi,+916733745926,meera561@example.com,F,12/04/1979,Hyderabad,Below 3L,Home;Tech,insta,,21-12-25,2026-07-31
+VB10030,Omkar Bhosale,+916762528070,,Male,1996-09-01,Hyderabad,Below 3L,Health,IG,,15/08/2025,
+VB10079,Harsh Rao,+918246854242,harsh@example,male,1994-08-13,Ahmedabad,10L-20L,Travel;Food;Fashion;Home,WA grp mumbai,,24/10/2025,
+VB10096,Tanvi Pawar,+918122028485,,F,16/02/1999,navi mumbai,3L-6L,Kids;Finance;Fashion,Staff DM - Agent 01,,14/10/2025,
+VB10068,Vivaan Kulkarni,07637167155,,Male,21/01/1984,MUMBAI ,3L-6L,Finance;Food,Staff DM - Agent 02,,04/01/2025,
+VB10163,Asha Chavan,823903590,asha.51@example.in,F,26-08-68,Ahmedabad,6L-10L,Travel;Auto;Finance,Staff DM - Agent 02,,19/01/2025,08/09/2025
+VB10067,Diya Khan,+91 96114 63511,diya.37@example.in,Female,1967-05-17,Bengaluru,Below 3L,Finance;Tech,Referral,VB10058,2026-06-26,
+VB10156,Sunita Patil,875540819,,female,1995-01-08,Thane,Below 3L,Tech;Fashion;Kids;Food,,,28/09/2025,10/06/2026
+VB10020,Farhan Reddy,6515438299,farhan@example,,01-03-74,Ahmedabad,3L-6L,Food;Health,WhatsApp Group - Pune,,12/06/2026,
+VB10183,Sunita Jadhav,77825-54053,sunita@example,Female,10/03/1983,Bangalore,10L-20L,Auto;Travel,WhatsApp Group - Pune,,19/12/2025,
+VB10002,Zoya Pillai,6518844729,zoya302@example.com,female,1990-05-12,Bangalore,6L-10L,Health,Facebook,,2026-01-21,
+VB10048,Farhan Khan,06387592115,farhan.18@example.in,Male,1965-02-03,Nagpur,3L-6L,Auto;Home,Facebook,,04/06/2025,2026-01-11
+VB10023,Swati Bhosale,6449766085,,Female,21/09/1974,Nagpur,10L-20L,"Finance, Food , ,Tech",IG,,28-08-25,19-11-25
+VB10062,Ananya Mehta,82464-66863,,Female,17/12/1967,,Below 3L,Beauty;Health;Tech;Travel,Referral,VB10023,26-06-25,11/09/2025
+VB10136,Ayesha Sharma,7644081869,,Female,2001-12-08,Delhi,6L-10L,Beauty;Finance,WhatsApp Group - Pune,,2025-07-13,07/08/2025
+VB10098,  ANANYA BHOSALE ,+91 98531 62448,,Female,21-05-88,Nashik,10L-20L,Auto,Staff DM - Agent 02,,25/02/2026,20/10/2026
+VB10097,Swati Pillai,8999617978,swati@example,female,03-09-93,Hyderabad,6L-10L,Auto;Health;Beauty,Referral,VB10049,14/06/2026,
+VB10162,Arjun Nair,+919748501228,,male,21-04-74,Ahmedabad,3L-6L,Fashion;Kids,Staff DM - Agent 01,,12/06/2026,
+VB10174,Rohan Kulkarni,9525832436,,male,28/05/2001,Nashik,3L-6L,Kids,Staff DM - Agent 02,,18/11/2025,25/01/2026
+VB10061,Lata Chavan,67276-15141,lata.41@example.in,Female,25-11-05,Pune,3L-6L,Tech;Home;Travel;Food,WhatsApp Group - Mumbai,,20/03/2026,25/04/2026
+VB10110,Deepak Shaikh,7743680431,deepak@example,Male,15/08/1975,Thane,Below 3L,Food;Auto;Fashion,Staff DM - Agent 02,,15-05-25,14/10/2025
+VB10127,Farhan Singh,91265-24913,farhan.62@example.in,Male,24/11/1996,mumbai,Above 20L,Food,WA grp mumbai,,02-04-25,15/10/2025
+VB10077,Meera Sharma,7250215205,meera.34@example.in,F,03/07/1971,Bangalore,Below 3L,Travel,whatsapp mumbai,,19-07-25,
+VB10184,Aarav Reddy,+919411397415,aarav.24@example.in,male,28/01/1984,Delhi,Below 3L,Finance;Food;Auto,insta,,22/10/2025,
+VB10173,Neha Mishra,8622102298,neha@example,Female,16/05/1985,Pune,6L-10L,Food;Finance;Fashion,Referral,VB10026,24/05/2025,
