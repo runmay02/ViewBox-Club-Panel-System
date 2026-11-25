@@ -1,107 +1,17 @@
-import React from "react"
-import {
-  User,
-  MapPin,
-  Calendar,
-  Briefcase,
-  Heart,
-  ShieldCheck,
-  Award,
-  History,
-} from "lucide-react"
-import { Card, CardContent } from "@/components/ui/Card"
-import { Badge } from "@/components/ui/Badge"
-import { mockCurrentUser } from "@/mock/demoData"
-
-export const RespondentProfilePage: React.FC = () => {
-  return (
-    <div className="space-y-4">
-      {/* Profile Header Card */}
-      <div className="bg-white rounded-2xl border border-slate-200 p-4 shadow-xs flex items-center gap-3.5">
-        <div className="h-14 w-14 rounded-2xl bg-gradient-to-tr from-brand-600 to-indigo-500 text-white flex items-center justify-center font-bold text-lg shadow-sm">
-          IS
-        </div>
-        <div>
-          <div className="flex items-center gap-1.5">
-            <h3 className="text-sm font-bold text-slate-900">{mockCurrentUser.name}</h3>
-            <span className="text-[10px] bg-brand-50 text-brand-700 font-mono px-1.5 py-0.2 rounded font-semibold border border-brand-200">
-              {mockCurrentUser.member_id}
-            </span>
-          </div>
-          <p className="text-xs text-slate-500 mt-0.5">{mockCurrentUser.email}</p>
-          <span className="inline-flex items-center gap-1 text-[10px] text-emerald-700 font-semibold mt-1">
-            <ShieldCheck className="h-3 w-3" /> Phone Verified: +91 {mockCurrentUser.phone}
-          </span>
-        </div>
-      </div>
-
-      {/* Demographics Card */}
-      <Card className="border-slate-200 shadow-2xs">
-        <CardContent className="p-4 space-y-3">
-          <h4 className="text-xs font-bold uppercase tracking-wider text-slate-500 flex items-center gap-1.5">
-            <User className="h-3.5 w-3.5" />
-            Demographic Information
-          </h4>
-
-          <div className="space-y-2 text-xs">
-            <div className="flex justify-between py-1 border-b border-slate-100">
-              <span className="text-slate-500 flex items-center gap-1">
-                <MapPin className="h-3.5 w-3.5 text-slate-400" /> City:
-              </span>
-              <span className="font-semibold text-slate-800">{mockCurrentUser.city}</span>
-            </div>
-            <div className="flex justify-between py-1 border-b border-slate-100">
-              <span className="text-slate-500 flex items-center gap-1">
-                <Calendar className="h-3.5 w-3.5 text-slate-400" /> Date of Birth:
-              </span>
-              <span className="font-semibold text-slate-800">
-                {mockCurrentUser.date_of_birth} ({mockCurrentUser.age} years)
-              </span>
-            </div>
-            <div className="flex justify-between py-1 border-b border-slate-100">
-              <span className="text-slate-500 flex items-center gap-1">
-                <Briefcase className="h-3.5 w-3.5 text-slate-400" /> Income Range:
-              </span>
-              <span className="font-semibold text-slate-800">{mockCurrentUser.income_range}</span>
-            </div>
-            <div className="py-1">
-              <span className="text-slate-500 flex items-center gap-1 mb-1.5">
-                <Heart className="h-3.5 w-3.5 text-slate-400" /> Stated Interests:
-              </span>
-              <div className="flex flex-wrap gap-1.5">
-                {mockCurrentUser.interests.map((interest) => (
-                  <Badge key={interest} variant="secondary" className="text-[10px]">
-                    {interest}
-                  </Badge>
-                ))}
-              </div>
-            </div>
-          </div>
-        </CardContent>
-      </Card>
-
-      {/* Study Participation Status */}
-      <Card className="border-slate-200 shadow-2xs">
-        <CardContent className="p-4 space-y-2">
-          <h4 className="text-xs font-bold uppercase tracking-wider text-slate-500 flex items-center gap-1.5">
-            <Award className="h-3.5 w-3.5" />
-            Panel Participation Status
-          </h4>
-
-          <div className="p-3 bg-emerald-50 border border-emerald-200 rounded-xl text-xs text-emerald-900 flex items-center justify-between">
-            <div>
-              <p className="font-bold">Next Survey Eligibility</p>
-              <p className="text-[11px] text-emerald-700">Eligible immediately (No active cool-off)</p>
-            </div>
-            <span className="h-2.5 w-2.5 rounded-full bg-emerald-500 animate-pulse" />
-          </div>
-
-          <div className="pt-2 text-[11px] text-slate-500 flex items-center gap-1">
-            <History className="h-3.5 w-3.5 text-slate-400" />
-            <span>Completed Surveys to Date: <strong>2 studies</strong> (₹500 earned)</span>
-          </div>
-        </CardContent>
-      </Card>
-    </div>
-  )
+import React,{useState} from "react"
+import {User,MapPin,Calendar,Briefcase,Heart,ShieldCheck,History} from "lucide-react"
+import {Card,CardContent} from "@/components/ui/Card"
+import {Badge} from "@/components/ui/Badge"
+import {LoadingState} from "@/components/ui/LoadingState"
+import {ErrorState} from "@/components/ui/ErrorState"
+import {useMutation,useQuery,useQueryClient} from "@tanstack/react-query"
+import {Button} from "@/components/ui/Button"
+import api from "@/utils/api"
+type Profile={full_name:string;member_id:string;phone:string;email?:string;city:string;date_of_birth:string;age:number;income_range:string;interests:string[];cool_off_until?:string|null;total_earned:number;acquisition_source?:string}
+export const RespondentProfilePage:React.FC=()=>{
+ const qc=useQueryClient();const[editing,setEditing]=useState(false);const[form,setForm]=useState({city:"",income_range:"",interests:"",email:""})
+ const q=useQuery({queryKey:["profile"],queryFn:async()=> (await api.get<Profile>("/members/me")).data})
+ const save=useMutation({mutationFn:async()=>(await api.patch<Profile>("/members/me",{city:form.city,income_range:form.income_range,interests:form.interests.split(",").map(x=>x.trim()).filter(Boolean),email:form.email||null})).data,onSuccess:()=>{setEditing(false);void qc.invalidateQueries({queryKey:["profile"]})}})
+ if(q.isLoading)return <LoadingState/>;if(q.error)return <ErrorState title="Could not load your profile" message={q.error.message} onRetry={()=>void q.refetch()}/>;const p=q.data!
+ return <div className="space-y-4"><div className="bg-white rounded-2xl border p-4 flex items-center gap-3"><div className="h-14 w-14 rounded-2xl bg-brand-600 text-white grid place-items-center font-bold">{p.full_name.split(/\s+/).map(x=>x[0]).slice(0,2).join("").toUpperCase()}</div><div><h3 className="text-sm font-bold">{p.full_name}</h3><p className="text-xs text-slate-500">{p.member_id} · {p.email||"No email added"}</p><span className="inline-flex items-center gap-1 text-[10px] text-emerald-700 mt-1"><ShieldCheck className="h-3 w-3"/>Verified phone: +91 {p.phone}</span></div></div><Card><CardContent className="p-4 space-y-3"><div className="flex justify-between items-center"><h4 className="text-xs font-bold uppercase text-slate-500 flex gap-1"><User className="h-3.5 w-3.5"/>Demographic Information</h4><Button size="sm" variant="outline" onClick={()=>{setForm({city:p.city,income_range:p.income_range,interests:p.interests.join(", "),email:p.email||""});setEditing(x=>!x)}}>{editing?"Cancel":"Edit profile"}</Button></div>{editing?<form className="space-y-2" onSubmit={e=>{e.preventDefault();save.mutate()}}><label className="block text-xs">City<input required value={form.city} onChange={e=>setForm({...form,city:e.target.value})} className="mt-1 w-full border rounded p-2"/></label><label className="block text-xs">Income range<input required value={form.income_range} onChange={e=>setForm({...form,income_range:e.target.value})} className="mt-1 w-full border rounded p-2"/></label><label className="block text-xs">Interests<input value={form.interests} onChange={e=>setForm({...form,interests:e.target.value})} className="mt-1 w-full border rounded p-2"/></label><label className="block text-xs">Email<input type="email" value={form.email} onChange={e=>setForm({...form,email:e.target.value})} className="mt-1 w-full border rounded p-2"/></label>{save.isError&&<p role="alert" className="text-rose-700">{save.error.message}</p>}<Button type="submit" variant="brand" disabled={save.isPending}>{save.isPending?"Saving…":"Save changes"}</Button></form>:<><div className="flex justify-between text-xs border-b py-2"><span><MapPin className="inline h-3.5 w-3.5 mr-1"/>City</span><b>{p.city}</b></div><div className="flex justify-between text-xs border-b py-2"><span><Calendar className="inline h-3.5 w-3.5 mr-1"/>Date of birth</span><b>{p.date_of_birth} ({p.age})</b></div><div className="flex justify-between text-xs py-2"><span><Briefcase className="inline h-3.5 w-3.5 mr-1"/>Income range</span><b>{p.income_range}</b></div><div><span className="text-xs text-slate-500"><Heart className="inline h-3.5 w-3.5 mr-1"/>Interests</span><div className="flex gap-1.5 flex-wrap mt-2">{p.interests.map(x=><Badge key={x} variant="secondary">{x}</Badge>)}</div></div></>}</CardContent></Card><Card><CardContent className="p-4 text-xs"><h4 className="font-bold uppercase text-slate-500 mb-3">Panel Participation</h4><p className="text-slate-700">{p.cool_off_until?`Next survey eligibility: ${p.cool_off_until}`:"Eligible to apply when matching surveys are available."}</p><p className="mt-3 text-slate-500"><History className="inline h-3.5 w-3.5 mr-1"/>Total paid: <b className="text-slate-900">₹{p.total_earned.toLocaleString()}</b></p></CardContent></Card></div>
 }

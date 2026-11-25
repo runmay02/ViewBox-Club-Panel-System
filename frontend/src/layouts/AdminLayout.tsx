@@ -12,9 +12,11 @@ import {
 } from "lucide-react"
 import { RoleSwitcher } from "@/components/navigation/RoleSwitcher"
 import { cn } from "@/utils/cn"
+import {useAuth} from "@/contexts/AuthContext"
 
 export const AdminLayout: React.FC = () => {
   const location = useLocation()
+  const {user,logout}=useAuth()
 
   const navItems = [
     { label: "Dashboard & KPIs", path: "/admin", icon: LayoutDashboard },
@@ -86,11 +88,12 @@ export const AdminLayout: React.FC = () => {
                 </div>
                 <div>
                   <p className="text-xs font-semibold text-white">Administrator</p>
-                  <p className="text-[10px] text-slate-400">admin@viewbox.club</p>
+                  <p className="text-[10px] text-slate-400">+91 {user?.phone}</p>
                 </div>
               </div>
               <button
                 title="Logout"
+                onClick={logout}
                 className="p-1.5 text-slate-400 hover:text-white rounded hover:bg-slate-800 transition-colors"
               >
                 <LogOut className="h-4 w-4" />

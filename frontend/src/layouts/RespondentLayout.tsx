@@ -10,16 +10,20 @@ import {
   Monitor,
 } from "lucide-react"
 import { RoleSwitcher } from "@/components/navigation/RoleSwitcher"
-import { mockCurrentUser } from "@/mock/demoData"
 import { cn } from "@/utils/cn"
+import { useQuery } from "@tanstack/react-query"
+import api from "@/utils/api"
+import { useAuth } from "@/contexts/AuthContext"
 
 export const RespondentLayout: React.FC = () => {
   const location = useLocation()
   const [copied, setCopied] = useState(false)
   const [isMobilePreview, setIsMobilePreview] = useState(true)
+  const { logout } = useAuth()
+  const {data:profile}=useQuery({queryKey:["profile"],queryFn:async()=> (await api.get<{full_name:string;referral_link:string;total_earned:number}>("/members/me")).data})
 
   const handleCopyLink = () => {
-    navigator.clipboard.writeText(mockCurrentUser.referral_link)
+    if(profile?.referral_link) void navigator.clipboard.writeText(new URL(profile.referral_link,window.location.origin).toString())
     setCopied(true)
     setTimeout(() => setCopied(false), 2000)
   }
@@ -89,7 +93,7 @@ export const RespondentLayout: React.FC = () => {
                     ViewBox Club
                   </h2>
                   <p className="text-[10px] text-slate-500">
-                    Welcome, {mockCurrentUser.name.split(" ")[0]}
+                    Welcome, {profile?.full_name.split(" ")[0] || "Member"}
                   </p>
                 </div>
               </div>
@@ -97,7 +101,7 @@ export const RespondentLayout: React.FC = () => {
               {/* Earnings & Referral Quick Button */}
               <div className="flex items-center gap-2">
                 <span className="inline-flex items-center gap-1 px-2 py-1 rounded-full text-xs font-bold bg-emerald-50 text-emerald-700 border border-emerald-200 shadow-xs">
-                  ₹{mockCurrentUser.total_earned}
+                  ₹{profile?.total_earned || 0}
                 </span>
 
                 <button
@@ -114,6 +118,7 @@ export const RespondentLayout: React.FC = () => {
                     {copied ? "Copied!" : "Refer"}
                   </span>
                 </button>
+                <button onClick={logout} className="text-[10px] text-slate-500 hover:text-rose-600" aria-label="Sign out">Log out</button>
               </div>
             </div>
           </header>

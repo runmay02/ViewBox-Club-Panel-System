@@ -9,34 +9,42 @@ import {
 } from "lucide-react"
 import { RoleSwitcher } from "@/components/navigation/RoleSwitcher"
 import { cn } from "@/utils/cn"
+import {useAuth} from "@/contexts/AuthContext"
 
 export const OperationsLayout: React.FC = () => {
   const location = useLocation()
+  const {user}=useAuth()
 
   const tabs = [
     {
       label: "Referral Verification Queue",
       path: "/ops",
       icon: Users,
-      badge: "3",
+      badge: "",
+    },
+    {
+      label: "Respondents",
+      path: "/ops/respondents",
+      icon: Users,
+      badge: "",
     },
     {
       label: "Survey Applications",
       path: "/ops/applications",
       icon: ClipboardList,
-      badge: "5",
+      badge: "",
     },
     {
       label: "Payout Authorization",
       path: "/ops/payouts",
       icon: DollarSign,
-      badge: "3",
+      badge: "",
     },
     {
       label: "Fraud Review Queue",
       path: "/ops/fraud",
       icon: AlertTriangle,
-      badge: "1",
+      badge: "",
     },
   ]
 
@@ -68,8 +76,8 @@ export const OperationsLayout: React.FC = () => {
 
           <div className="flex items-center gap-2">
             <div className="text-right">
-              <p className="text-xs font-semibold text-slate-800">Field Agent 01</p>
-              <p className="text-[10px] text-slate-500">ops@viewbox.club</p>
+              <p className="text-xs font-semibold text-slate-800">Operations</p>
+              <p className="text-[10px] text-slate-500">+91 {user?.phone}</p>
             </div>
             <div className="h-8 w-8 rounded-full bg-amber-100 text-amber-800 flex items-center justify-center font-bold text-xs">
               FA

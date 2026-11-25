@@ -1,4 +1,8 @@
 import React from "react"
+import {useQuery} from "@tanstack/react-query"
+import api from "@/utils/api"
+import {LoadingState} from "@/components/ui/LoadingState"
+import {ErrorState} from "@/components/ui/ErrorState"
 import {
   Users,
   ClipboardList,
@@ -19,9 +23,13 @@ import {
   Bar,
   Cell,
 } from "recharts"
-import { mockAdminKpis } from "@/mock/demoData"
+type Kpis={total_respondents:number;new_signups_7d:number;active_surveys:number;completed_surveys:number;successful_referrals:number;total_referrals:number;pending_ops_tasks:number;total_payouts_disbursed:number;signup_trend:{date:string;signups:number}[];source_distribution:{name:string;count:number}[];referral_funnel:{stage:string;count:number}[]}
 
 export const AdminDashboard: React.FC = () => {
+  const query=useQuery({queryKey:["admin-kpis"],queryFn:async()=> (await api.get<Kpis>("/admin/kpis")).data})
+  if(query.isLoading)return <LoadingState/>
+  if(query.error)return <ErrorState title="Could not load analytics" message={query.error.message} onRetry={()=>void query.refetch()}/>
+  const kpis=query.data!
   return (
     <div className="space-y-6">
       {/* Page Title & Mission Statement */}
@@ -55,11 +63,11 @@ export const AdminDashboard: React.FC = () => {
           </CardHeader>
           <CardContent>
             <div className="text-2xl font-bold text-slate-900">
-              {mockAdminKpis.total_respondents}
+              {kpis.total_respondents}
             </div>
             <p className="text-xs text-emerald-600 font-medium flex items-center gap-1 mt-1">
               <ArrowUpRight className="h-3.5 w-3.5" />
-              <span>+{mockAdminKpis.new_signups_7d} new this week</span>
+              <span>+{kpis.new_signups_7d} new this week</span>
             </p>
           </CardContent>
         </Card>
@@ -75,10 +83,10 @@ export const AdminDashboard: React.FC = () => {
           </CardHeader>
           <CardContent>
             <div className="text-2xl font-bold text-slate-900">
-              {mockAdminKpis.active_surveys}
+              {kpis.active_surveys}
             </div>
             <p className="text-xs text-slate-500 font-medium mt-1">
-              {mockAdminKpis.completed_surveys} verified completions
+              {kpis.completed_surveys} verified completions
             </p>
           </CardContent>
         </Card>
@@ -94,10 +102,10 @@ export const AdminDashboard: React.FC = () => {
           </CardHeader>
           <CardContent>
             <div className="text-2xl font-bold text-slate-900">
-              {mockAdminKpis.successful_referrals}
+              {kpis.successful_referrals}
             </div>
             <p className="text-xs text-slate-500 font-medium mt-1">
-              Out of {mockAdminKpis.total_referrals} total leads (21% conversion)
+              Out of {kpis.total_referrals} total leads (21% conversion)
             </p>
           </CardContent>
         </Card>
@@ -113,10 +121,10 @@ export const AdminDashboard: React.FC = () => {
           </CardHeader>
           <CardContent>
             <div className="text-2xl font-bold text-slate-900">
-              ₹{mockAdminKpis.total_payouts_disbursed.toLocaleString()}
+              ₹{kpis.total_payouts_disbursed.toLocaleString()}
             </div>
             <p className="text-xs text-amber-600 font-medium mt-1">
-              12 operations tasks pending sign-off
+              {kpis.pending_ops_tasks} operations tasks pending sign-off
             </p>
           </CardContent>
         </Card>
@@ -136,7 +144,7 @@ export const AdminDashboard: React.FC = () => {
           </CardHeader>
           <CardContent className="h-64 pt-2">
             <ResponsiveContainer width="100%" height="100%">
-              <AreaChart data={mockAdminKpis.signup_trend}>
+              <AreaChart data={kpis.signup_trend}>
                 <defs>
                   <linearGradient id="signupGrad" x1="0" y1="0" x2="0" y2="1">
                     <stop offset="5%" stopColor="#4f46e5" stopOpacity={0.4} />
@@ -180,7 +188,7 @@ export const AdminDashboard: React.FC = () => {
           </CardHeader>
           <CardContent className="h-64 pt-2">
             <ResponsiveContainer width="100%" height="100%">
-              <BarChart data={mockAdminKpis.source_distribution}>
+              <BarChart data={kpis.source_distribution}>
                 <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#f1f5f9" />
                 <XAxis
                   dataKey="name"
@@ -200,8 +208,8 @@ export const AdminDashboard: React.FC = () => {
                   }}
                 />
                 <Bar dataKey="count" radius={[6, 6, 0, 0]}>
-                  {mockAdminKpis.source_distribution.map((entry, index) => (
-                    <Cell key={`cell-${index}`} fill={entry.color} />
+                  {kpis.source_distribution.map((_entry, index) => (
+                    <Cell key={`cell-${index}`} fill={"#4f46e5"} />
                   ))}
                 </Bar>
               </BarChart>
@@ -222,7 +230,7 @@ export const AdminDashboard: React.FC = () => {
         </CardHeader>
         <CardContent>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            {mockAdminKpis.referral_funnel.map((step, idx) => (
+            {kpis.referral_funnel.map((step, idx) => (
               <div
                 key={step.stage}
                 className="p-4 rounded-xl border border-slate-200 bg-slate-50/50 flex flex-col justify-between"

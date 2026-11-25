@@ -2,12 +2,14 @@ import React from "react"
 import { useNavigate, useLocation } from "react-router-dom"
 import { Shield, Users, Smartphone } from "lucide-react"
 import { cn } from "@/utils/cn"
+import { useAuth } from "@/contexts/AuthContext"
 
 export const RoleSwitcher: React.FC = () => {
   const navigate = useNavigate()
   const location = useLocation()
 
   const currentPath = location.pathname
+  const {user}=useAuth()
 
   const roles = [
     {
@@ -34,7 +36,7 @@ export const RoleSwitcher: React.FC = () => {
       active: currentPath.startsWith("/admin"),
       badge: "Full Control",
     },
-  ]
+  ].filter(r=>user?.role==="ADMIN"||(user?.role==="OPERATIONS"&&r.id!=="admin")||(user?.role==="RESPONDENT"&&r.id==="respondent"))
 
   return (
     <div className="bg-slate-900 border-b border-slate-800 text-white px-4 py-2 sticky top-0 z-50 shadow-md">
